@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bmiback"
+    android:layout_height="match_parent"
+    tools:context=".BmiApplication">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textColor="#333"
+        android:textSize="28dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="BODY MASS INDEX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/et_weight"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/edit_text_border"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:hint=" Weight Enter In KG "
+        android:layout_height="50dp"/>
+    <EditText
+        android:inputType="number"
+        android:id="@+id/et_hieght"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/edit_text_border"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:hint=" Hieght in Cemtemerter"
+        android:layout_height="50dp"/>
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/res_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:text="Calculate" />
+        <Button
+            android:visibility="gone"
+
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:text="Clear Data" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#108BED"
+        android:gravity="center"
+        android:id="@+id/my_bmi_output"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textSize="30dp"
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
